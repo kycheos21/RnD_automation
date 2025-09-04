@@ -13,15 +13,18 @@ def test_firecrawl_connection():
     # 환경변수 로드 시도
     try:
         load_dotenv()
-    except:
-        print("⚠️ .env 파일 로드 실패, 직접 설정된 환경변수 사용")
+        print("✅ .env 파일 로드 성공")
+    except Exception as e:
+        print(f"⚠️ .env 파일 로드 실패: {e}")
     
-    # API 키 확인 (직접 설정도 시도)
+    # API 키 확인
     api_key = os.getenv('FIRECRAWL_API_KEY')
-    if not api_key:
-        # 직접 설정 시도
+    if api_key:
+        print("✅ 환경변수에서 API 키 로드 성공")
+    else:
+        # 직접 설정 시도 (백업)
         api_key = "fc-6c348fc20f0045a2bf8601c1d99a559c"
-        print("💡 직접 설정된 API 키 사용")
+        print("💡 백업용 API 키 사용 (.env 파일 확인 필요)")
     
     if not api_key:
         print("❌ FIRECRAWL_API_KEY를 찾을 수 없습니다.")
