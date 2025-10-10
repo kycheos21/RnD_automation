@@ -53,6 +53,11 @@ NTIS 웹사이트 → Firecrawl API → 데이터 처리 → 엑셀 생성 → �
 
 ## 4. 기능 명세
 
+### 4.0 API 연동 
+- https://www.data.go.kr/data/15077315/openapi.do 
+- {"name":"한국과학기술정보연구원_국가R&D 과제검색 서비스(대국민용)","description":"국가R&D로 수행된 연구과제들의 메타정보를 종합적으로 검색할 수 있는 서비스를 제공하는 API입니다.","url":"https://www.data.go.kr/data/15077315/openapi.do","keywords":"정보/통신,정보이론,정보검색","license":"공공저작물_출처표시","dateCreated":"2021-02-19","dateModified":"2021-09-16","datePublished":"2021-02-19","creator":{"name":"한국과학기술정보연구원","contactPoint":{"contactType":"정보화전략실","telephone":"042-869-1875","@type":"ContactPoint"},"@type":"Organization"},"additionalType":"과학기술 - 과학기술연구","encodingFormat":"XML","@context":"https://schema.org","@type":"Dataset"}
+
+
 ### 4.1 웹 크롤링 기능
 - **대상 사이트**: NTIS (https://www.ntis.go.kr/rndgate/eg/un/ra/mng.do)
 - **수집 데이터**: 과제명, 공고기관, 신청마감일, 사업비, 링크

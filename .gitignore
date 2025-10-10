@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+temp_files/
+*.log
+*.tmp
+
+# Output files (실제 결과물은 제외, 샘플만 포함)
+output/*.png
+output/ntis_crawled_raw.json
+output/ntis_crawled_data.json
+output/ntis_managed_data.json
+output/*.xlsx
+
+# API Keys
+.env
+set_api_key.bat
+
+# 샘플 데이터는 포함
+!output/sample_*.json
+
+# Test files (임시)
+test_*.py
+*_test.py
+debug_*.py
+check_*.py
+example_*.py

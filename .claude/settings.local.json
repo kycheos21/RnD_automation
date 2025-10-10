@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(venv\\\\Scripts\\\\python.exe test_js_action.py:*)",
+      "Bash(\"venv\\Scripts\\python.exe\" test_js_action.py)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

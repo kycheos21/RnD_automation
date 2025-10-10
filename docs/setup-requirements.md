@@ -118,7 +118,7 @@ EMAIL_PASSWORD=your_password
 EMAIL_TO=team@company.co.kr
 
 # Search Keywords
-SEARCH_KEYWORDS=AI,인공지능,디지털전환,스마트팩토리
+SEARCH_KEYWORDS=AI
 ```
 
 ### 6.2 환경변수 로드용 라이브러리
